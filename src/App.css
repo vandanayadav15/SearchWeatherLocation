@@ -1,38 +1,122 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+#search {
+  height: 837px;
+  background-color: #000000;
+}
+.heading {
+  font-size: 40px;
+  line-height: 121px;
+  color: #FFFFFF;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.searchbx{
+  position: relative;
+  box-sizing: border-box;
+  width: 600px;
+  height: 50px;
+  border-radius: 10px;
+  background: transparent;
+  font-size: 25px;
+  padding: 10px;
+  color: white;
+  border: 1px solid #FFFFFF;
+}
+
+.btn {
+  position: absolute; 
+  width: 250px;
+  height: 50px;
+  font-size: 25px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top:50px;
+  left:350px;
+}
+.heading1 {
+  position: absolute;
+  left:90px;
+  top: 28px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 121px;
+  color: #000000;
+}
+
+.region {
+  position: relative;
+  left: 110px;
+}
+
+.lat {
+  position: relative;
+  left: 110px;
+}
+
+.checkbox1 {
+  position: absolute;
+  width: 769.46px;
+  height: 74px;
+  left: -20px;
+  display: flex;
+  justify-content: space-between;
+  top: 50px;
+  padding: 150px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  align-items: center;
+
+}
+
+.apidata {
+  box-sizing: border-box;
+  font-size: 25px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: absolute;
+  width: 1185px;
+  height: 800px;
+  left: 90px;
+  top: 240px;
+  border: 2px solid #000000;
+  background-color: lightcyan;
 }
 
-.App-link {
-  color: #61dafb;
+input:checked {
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.apidata img {
+  position: relative;
+  left: 500px;
+  width: 100px;
+  height: 100px;
 }
+
+.apidata p {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin: 15px;
+}
+
+p span {
+  margin-left: 180px;
+}
+
+input {
+  width: 20px;
+}
+   
